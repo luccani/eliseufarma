@@ -1,0 +1,107 @@
+/* ALTERAR PARA TODOS OS ELEMENTOS */
+html * {
+    /* RESETAR A MARGEM */
+    margin: 0px;
+    /* LARGURA MÁXIMA DOS ELEMENTOS */
+    max-width: 100%;
+}
+
+body {
+    /* COR DE FUNDO */
+    background-color: #00d000;
+}
+
+#logotipo {
+    /* LARGURA DO LOGOTIPO */
+    width: 200px;
+    /* MARGEM DO LOGOTIPO */
+    margin: 20px;
+}
+
+#menu{
+    /*Cor de fundo*/
+    background-color: #001475;
+    margin-bottom: 20px;
+    border-top: 10px solid #fbf370; 
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     /*Alinhamento Central do texto - Center*/
+    text-align: center;
+     /*Posicionamento horizontal-Center*/
+    justify-content: center;
+}
+
+#menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/*Pseudo-seletor-Para alterar a propriedade de um seletor*/
+#menu a:hover{
+    color: #fbfbfb;
+    background-color: #d5c358;
+}
+
+.principal {
+    /* ATIVAR O MODO GRID (LINHAS E COLUNAS) */
+    display: grid;
+
+    /* ELEMENTOS DENTRO DA CLASSE PRINCIPAL NO FORMATO DE 3 COLUNAS */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* ESPAÇAMENTO ENTRE COLUNAS E LINHAS DO GRID */
+    gap: 30px;
+}
+
+.item{
+    /*Cor de fundo*/
+    background-color: #fbf370;
+    /*Fonte*/
+    font-family: sans-serif;
+    /*Letras Maiusculas*/
+    text-transform: uppercase;
+    /*Margem*/
+    margin: 20px;
+    /*Cor da fonte*/
+    color: #593806;
+    /*Borda Superior*/
+    border-top: 5px solid #593806;
+    /*Bordas arredondadas*/
+    border-radius: 1%;
+    /*Texto centralizado*/
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.item-img {
+    height:500px;
+    width: 510px;
+    object-fit: cover;
+}
+
+.item-h2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    }
+
+.rodape {
+    background-color: #001475;
+    height: 100px;
+
+    /*Habilitar o modo de linhas e grades*/
+    display: grid;
+     /*Posicionamento horizontal-Center*/
+    justify-content: center;
+    /*Posicionamento central - Center*/
+    align-content: center;
+}
+
+.rodape p {
+    color: #fbfbfb;
+}
